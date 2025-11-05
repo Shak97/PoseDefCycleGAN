@@ -1,7 +1,6 @@
 # PoseDefCycleGAN
 **Identity-Preserving Face Frontalization with Deformable Convolutions and Pose-Aware Supervision**
 
----
 
 ## Overview
 PoseDefCycleGAN is a deep learning framework for **face frontalization** that preserves **identity consistency** even under large pose variations.  
@@ -11,7 +10,6 @@ This repository accompanies the paper:
 
 > **PoseDefCycleGAN: Identity-Preserving Face Frontalization with Deformable Convolutions and Pose-Aware Supervision**  
 
----
 
 ## Architecture
 Below is the overall architecture of **PoseDefCycleGAN**,.
@@ -22,7 +20,6 @@ Below is the overall architecture of **PoseDefCycleGAN**,.
 
 > **Figure:** Overview of the PoseDefCycleGAN architecture. The network extends CycleGAN with deformable convolution modules and a pose-guided identity supervision branch to enhance face frontalization robustness.
 
----
 
 ## Code Availability
 We appreciate the community’s interest in reproducibility and open research.
@@ -34,7 +31,6 @@ The **full implementation**, including:
 
 will be **made publicly available soon** upon final acceptance of the paper.
 
----
 
 ## Planned Repository Structure
 PoseDefCycleGAN/
@@ -47,7 +43,6 @@ PoseDefCycleGAN/
 └── README.md
 
 
----
 
 ## Key Features
 - **Deformable Convolutions** for flexible feature alignment  
@@ -55,9 +50,8 @@ PoseDefCycleGAN/
 - **CycleGAN Backbone** for unpaired image translation  
 - **Robust Face Frontalization** across large pose ranges
 
----
 
 ## Results
-Coming soon — visual comparisons and benchmark evaluations will be added upon public release.
+Coming soon - visual comparisons and benchmark evaluations will be added upon public release.
 
 
