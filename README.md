@@ -32,14 +32,17 @@ The **full implementation**, including:
 will be **made publicly available soon** upon final acceptance of the paper.
 
 
-## Planned Repository Structure
+## Repository Structure
 PoseDefCycleGAN/
 │
-├── configs/ # Configuration files
-├── models/ # Model definitions (CycleGAN + deformable convs)
-├── scripts/ # Training and inference scripts
-├── weights/ # Pre-trained weights (to be released)
-├── utils/ # Helper functions
+├── configs/
+├── data/
+├── models/
+├── losses/
+├── scripts/
+├── weights/
+├── utils/
+├── docs/
 └── README.md
 
 
