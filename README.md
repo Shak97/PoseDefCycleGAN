@@ -120,11 +120,16 @@ Full training and inference code, pretrained weights, and dataset preparation sc
 ## Citation
 
 ```bibtex
-@article{posedefcyclegan,
-  title  = {PoseDefCycleGAN: Identity-Preserving Face Frontalization with Deformable Convolutions and Pose-Aware Supervision},
-  author = {<authors>},
-  year   = {<year>},
-  note   = {Under review}
+@article{IBRAHIM2026115358,
+title = {PoseDefCycleGAN: Identity-preserving face frontalization with deformable convolutions and pose-aware supervision},
+journal = {Knowledge-Based Systems},
+volume = {337},
+pages = {115358},
+year = {2026},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2026.115358},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705126001012},
+author = {Shakeel Muhammad Ibrahim and Shujaat Khan and Young-Woong Ko and Jeong-Gun Lee}
 }
 ```
 
