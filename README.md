@@ -14,7 +14,7 @@ Headline results: FID drops to 15.90 on MultiPIE (vs 18.32 for vanilla CycleGAN)
 
 ## Framework
 
-![Framework overview with cycle consistency, pretrained identity and pose encoders, and dual discriminators](docs/framework_overview.png)
+![Framework overview with cycle consistency, pretrained identity and pose encoders, and dual discriminators](assets/framework_overview.png)
 
 Two generators form the cycle. G_F maps a profile image I_p to a synthesised frontal `Î_f = G_F(I_p)`, and G_P maps a frontal back to a profile. Cycle consistency enforces that the round trip recovers the input.
 
@@ -28,7 +28,7 @@ E_id and E_pose are separate frozen networks, not heads of the discriminator. Ke
 
 ## Network architecture
 
-![Generator and discriminator layer stack](docs/network_architecture.png)
+![Generator and discriminator layer stack](assets/network_architecture.png)
 
 **Generator** (top row, ReLU activations):
 
@@ -50,7 +50,7 @@ A standard convolution samples on a fixed grid. The transformation from profile 
 
 The ablation below puts a generator with the deformable output layer (yellow boxes, right) next to the same generator with a standard conv output (red boxes, left). The mouth corners, the eyeglass frames, and the inner-eye region are visibly sharper on the deformable side.
 
-![Deformable convolution ablation, zoomed eye and mouth regions](docs/deformable_ablation.png)
+![Deformable convolution ablation, zoomed eye and mouth regions](assets/deformable_ablation.png)
 
 ## Loss function
 
@@ -73,7 +73,7 @@ The pose loss is the bit that makes this more than a CycleGAN with a fancy outpu
 
 A t-SNE of the identity encoder E_id, coloured by yaw angle from -90 to +90 degrees:
 
-![t-SNE of input pixel space versus learned identity space, coloured by pose](docs/tsne_pose_identity.png)
+![t-SNE of input pixel space versus learned identity space, coloured by pose](assets/tsne_pose_identity.png)
 
 Left is the raw pixel embedding. Colours cluster, which means pose dominates the representation. Right is the E_id embedding on generated frontals. Colours are scrambled, which means pose has been factored out and identity is what is left.
 
@@ -81,13 +81,13 @@ Left is the raw pixel embedding. Colours cluster, which means pose dominates the
 
 Profile inputs on the left, several baselines in the middle columns, PoseDefCycleGAN and ground-truth frontal on the right.
 
-![Frontalization comparison on MultiPIE](docs/qualitative_comparison.png)
+![Frontalization comparison on MultiPIE](assets/qualitative_comparison.png)
 
 ## Quantitative results
 
 Face verification ROC at the EER operating points:
 
-![ROC curves on AFW (from 300W-LP) and MultiPIE](docs/roc_curve.png)
+![ROC curves on AFW (from 300W-LP) and MultiPIE](assets/roc_curve.png)
 
 | Dataset | FAR | TAR |
 |---|---|---|
@@ -150,3 +150,5 @@ The pose encoder builds on:
 ## Licence and attribution
 
 Figures in this README are taken from the paper above. Face crops shown in the figures originate from the CMU MultiPIE dataset (training, qualitative comparison, framework illustrations) and the AFW portion of 300W-LP (evaluation), and remain subject to those datasets' own terms of use.
+
+Code is based on the official CycleGAN code repository
